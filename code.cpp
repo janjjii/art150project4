@@ -3,11 +3,11 @@
 #include <avr/power.h> // Required for 16 MHz Adafruit Trinket
 #endif
 #define PIN        8
-#define NUMPIXELS 10
+#define NUMPIXELS 11 // interchangeable, for convinience
 #define DELAYVAL 500
 
-const int trigPin = 9;
-const int echoPin = 10;
+const int trigPin = 12; // interchangeable, for convinience
+const int echoPin = 13; // interchangeable, for convinience
 int brightlvl = 0;
 
 Adafruit_NeoPixel pixels(NUMPIXELS, PIN, NEO_GRB + NEO_KHZ800);
